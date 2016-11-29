@@ -99,7 +99,7 @@ class CourseAPIMixin(object):
             while page:
                 try:
                     logger.debug('Retrieving page %d of course info...', page)
-                    response = self.course_api.courses.get(page=page, page_size=100)
+                    response = self.course_api.courses.get(page=page, page_size=100, username=self.request.user.username)
                     course_details = response['results']
 
                     # Cache the information so that it doesn't need to be retrieved later.
