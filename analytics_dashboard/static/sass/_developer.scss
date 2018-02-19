@@ -505,11 +505,11 @@ body.view-dashboard {
     font-weight: 600;
     font-size: $font-size-large;
     border-radius: 5px;
-    border: 1px solid $blue;
-    background: $blue;
+    border: 1px solid rgb(95, 111, 172);
+    background: rgb(95, 111, 172);
 
     &:hover {
-      background: darken($blue, 20%);
+      background: darken(rgb(95, 111, 172), 20%);
       color: $white;
       background: white;
       @include transition(color 0.25s 0 ease);
