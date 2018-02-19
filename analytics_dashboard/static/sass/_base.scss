@@ -96,6 +96,40 @@ dl {
   margin-bottom: 0; // Get rid of Bootstrap's default margin. Many of our pages have a secondary navbar that needs to sit right below the main navbar.
 }
 
+.navbar-default {
+
+  .navbar-link {
+
+    color: $white;
+
+    &:hover, &:focus {
+
+      color: $white;
+
+    }
+
+  }
+
+  .navbar-nav {
+
+  li {
+
+    a {
+
+      color: $white;
+
+      &:hover, &:focus {
+
+        color: $white;
+
+      }
+
+    }
+
+  }
+
+}
+
 .navbar-brand {
   padding: 25px 50px; // needed for logo to render properly
   height: inherit;
@@ -103,7 +137,7 @@ dl {
   // STATE: hover
   &:hover, &:active {
     .navbar-brand-app {
-      color: darken($white, 20%);
+      color: $white;
     }
   }
 
@@ -374,6 +408,7 @@ dl {
 
   padding-bottom: ($padding-large-vertical);
   font-size: $font-size-small;
+  color: $white;
 
   .legal {
     padding-top: ($padding-large-vertical*2);
@@ -386,7 +421,6 @@ dl {
 
   .feedback {
     border-top: solid 2px $edx-blue;
-    background-color: white;
     text-align: center;
     padding: ($padding-large-vertical*2) $padding-small-horizontal;
   }
