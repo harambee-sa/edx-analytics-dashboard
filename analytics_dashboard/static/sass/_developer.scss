@@ -494,22 +494,23 @@ body.view-dashboard {
 .landing {
 
   p {
-    color: $gray-lighter;
+    color: $white;
   }
 
   // match the login button style to that of the LMS
   button {
     text-transform: uppercase;
-    color: $navbar-default-link-active-color;
+    color: $white;
     padding: 4px 45px;
     font-weight: 600;
     font-size: $font-size-large;
     border-radius: 5px;
-    border: 3px solid #e6e6e6;
+    border: 1px solid $blue;
+    background: $blue;
 
     &:hover {
-      border-color: $navbar-default-link-active-color;
-      color: $gray-d2;
+      background: darken($blue, 20%);
+      color: $white;
       background: white;
       @include transition(color 0.25s 0 ease);
     }

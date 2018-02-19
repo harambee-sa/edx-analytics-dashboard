@@ -31,6 +31,7 @@ main {
 
 a {
   @include transition(color ease-in-out .25s);
+  color: $blue;
 }
 
 
@@ -90,6 +91,7 @@ dl {
 // nav + header
 // --------------------
 .navbar {
+  background: $black;
   margin-bottom: 0; // Get rid of Bootstrap's default margin. Many of our pages have a secondary navbar that needs to sit right below the main navbar.
 }
 
@@ -100,7 +102,7 @@ dl {
   // STATE: hover
   &:hover, &:active {
     .navbar-brand-app {
-      color: $palette-primary-base;
+      color: $white;
     }
   }
 
@@ -377,7 +379,7 @@ dl {
     margin-left: $padding-small-horizontal;
     margin-right: $padding-small-horizontal;
     a {
-      color: $palette-primary-accent;
+      color: $white;
     }
   }
 
