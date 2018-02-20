@@ -112,15 +112,17 @@ dl {
 
   .navbar-nav {
 
-  li {
+    li {
 
-    a {
-
-      color: $white;
-
-      &:hover, &:focus {
+      a {
 
         color: $white;
+
+        &:hover, &:focus {
+
+          color: $white;        
+
+        }
 
       }
 
