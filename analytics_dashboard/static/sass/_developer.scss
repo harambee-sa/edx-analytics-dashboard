@@ -231,8 +231,14 @@ $lens-nav-margin: 15px;
 
   padding-left: $padding-large-horizontal;
 
+  li {
+
+    border-color: rgb(95, 111, 172);
+
+  }
+
   li > a {
-    color: $lens-nav-text-color;
+    color: rgb(95, 111, 172);
     padding-top: 0px;
     padding-bottom: $padding-small-vertical;
 
@@ -243,7 +249,7 @@ $lens-nav-margin: 15px;
   }
 
   li.active > a {
-    color: $navbar-default-link-active-color;
+    color: rgb(95, 111, 172);
   }
 
   .section-heading {
