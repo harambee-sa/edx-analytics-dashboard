@@ -136,8 +136,8 @@ button.chart-info {
 
   .nav-section.active {
     margin-bottom: 0px;
-    color: $navbar-default-link-active-color;
-    border-bottom: 6px solid $navbar-default-link-active-color;
+    color: $white;
+    border-bottom: 6px solid $white;
   }
 
   .nav-section {
@@ -172,7 +172,7 @@ $lens-nav-margin: 15px;
 }
 
 .lens-nav {
-  background-color: $lens-background-color;
+  background-color: rgb(95, 111, 172);
   min-height: $lens-nav-height;
   border: 0px;
   margin-bottom: 0px;
@@ -193,7 +193,7 @@ $lens-nav-margin: 15px;
       a, button {
         background: transparent;
         text-transform: uppercase;
-        color: $navbar-default-link-active-color;
+        color: $white;
       }
 
       // this prevents the drop down from overlapping with the menu
@@ -210,7 +210,7 @@ $lens-nav-margin: 15px;
 
     // style the nav secondary items
     li > a {
-      color: $lens-nav-text-color;
+      color: $white;
       min-height: $lens-nav-height;
       padding-top: $lens-padding-top;
       padding-bottom: 0px;
@@ -231,8 +231,14 @@ $lens-nav-margin: 15px;
 
   padding-left: $padding-large-horizontal;
 
+  li {
+
+    border-color: rgb(95, 111, 172) !important;
+
+  }
+
   li > a {
-    color: $lens-nav-text-color;
+    color: rgb(95, 111, 172);
     padding-top: 0px;
     padding-bottom: $padding-small-vertical;
 
@@ -243,7 +249,7 @@ $lens-nav-margin: 15px;
   }
 
   li.active > a {
-    color: $navbar-default-link-active-color;
+    color: rgb(95, 111, 172);
   }
 
   .section-heading {
@@ -494,23 +500,23 @@ body.view-dashboard {
 .landing {
 
   p {
-    color: $gray-lighter;
+    color: $white;
   }
 
   // match the login button style to that of the LMS
   button {
     text-transform: uppercase;
-    color: $navbar-default-link-active-color;
+    color: $white;
     padding: 4px 45px;
     font-weight: 600;
     font-size: $font-size-large;
     border-radius: 5px;
-    border: 3px solid #e6e6e6;
+    border: none;
+    background: rgb(95, 111, 172);
 
     &:hover {
-      border-color: $navbar-default-link-active-color;
-      color: $gray-d2;
-      background: white;
+      background: darken(rgb(95, 111, 172), 20%);
+      color: $white;
       @include transition(color 0.25s 0 ease);
     }
   }
@@ -701,6 +707,7 @@ body.view-dashboard {
   .navbar-nav {
 
     .nav-section.active {
+      color: $white;
       border-bottom: none;
     }
 
